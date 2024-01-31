@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images Tag</title>
+
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+
+</head>
+<body>
+
+    <img src="https://images.unsplash.com/photo-1616594136787-28732f588083?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="400px" alt="img">
+
+
+
+
+    <picture>
+
+        <source media="(min-width: 600px)" srcset="https://images.unsplash.com/photo-1616593787609-68f422cc1c7b?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+        <source media="(min-width: 400px)" srcset="https://images.unsplash.com/photo-1616594004753-5d4cc030088c?q=80&w=1325&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+        <img src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8" width="500px" alt="img">
+
+    </picture>
+
+
+
+
+    <!-- an image map generator  -->
+
+    <img src="Virat_kohli_FireBolt.jpg" width="500px" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="One()" target="" alt="" title="" href="" coords="65,39,448,119" shape="rect">
+    <area onclick="Two()" target="" alt="" title="" href="" coords="505,918,79" shape="circle">
+</map>
+
+    <script>
+
+        function One(){
+            alert("You Clicked on One")
+        }
+
+        function Two(){
+            alert("You Clicked on Two")
+        }
+
+    </script>
+
+</body>
+</html>
